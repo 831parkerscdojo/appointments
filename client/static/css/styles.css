@@ -1,0 +1,105 @@
+#login{
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+#loginfield{
+    width: 300px;
+    height: auto;
+}
+fieldset{
+    width: 1000px;
+}
+.nav{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    padding-right: 300px;
+    text-decoration-style: none;
+
+}
+a{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    padding-right: 300px; 
+}
+h1{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+h3{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;    
+}
+input{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+    border: solid black 1px;
+    padding-left: 10px;
+}
+.box{
+    margin-top: 20px;
+}
+
+ul{
+
+    list-style-type: none;
+
+}
+li{
+   font-family: GillSans, Calibri, Trebuchet, sans-serif;
+
+}
+table{
+    border: solid black 2px;
+    margin-top: 15px;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    text-align: center;
+}
+tr{
+    border: solid black 2px;
+    padding-left: 20px;
+}
+th{
+    border: solid black 1px;
+}
+td{
+    border: solid black 1px;
+    padding: 20px;
+    text-align: center;
+}
+.login_btn{
+    background-color: #a5d6a7;
+    color: white;
+    width: 100px;
+    height: 25px;
+    border: solid black 2px;
+    margin-top: 20px;
+
+}
+
+.delete_btn{
+    background-color: #f44336;
+    color: white;
+    width: 100px;
+    height: 25px;
+    border: solid black 2px;
+
+}
+.submit_btn{
+    background-color: #a5d6a7;
+    color: white;
+    width: 300px;
+    height: 40px;
+    border: solid black 2px;
+    margin-left: 65px;   
+}
+.vote_btn{
+    background-color: #81d4fa;
+    color: black;
+    width: 100px;
+    height: 25px;
+    border: solid black 2px;
+
+}
+

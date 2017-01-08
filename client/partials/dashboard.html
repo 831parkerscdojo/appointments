@@ -1,0 +1,27 @@
+<!-- Dashboard !-->
+<div ng-controller = 'pollsController as PC'>
+    <a href="#/addpoll">Create a New Poll</a>
+    <a href="/logout" ng-click=PC.logout()>Log Out</a>
+    <div class="box">
+    <fieldset>
+    <legend><h1>Current Polls:</h1></legend>
+    <input ng-model="filter_name" placeholder="Search...">
+    <table>
+        <thead>
+            <td>Name</td>
+            <td>Survey Question</td>
+            <td>Date Posted</td>
+            <td>Action</td>
+        </thead>
+        <tr ng-repeat="poll in PC.polls | filter:filter_name">
+            <td>{{poll._user.name}}</td>
+            <td><a href='#/show/{{poll._id}}'>{{poll.question}}</a></td>
+            <td>{{poll.created_at | date: 'short' }}</td>
+            <td><button class="delete_btn" ng-click=PC.delete($index)>Delete</button></td>
+        </tr>
+    </table>
+    </fieldset>
+    </div>
+
+
+</div>

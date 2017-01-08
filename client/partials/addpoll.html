@@ -1,0 +1,26 @@
+<div ng-controller = 'pollsController as PC'>
+    <div class="nav">    
+        <a href="#/home">Cancel</a>
+        <a href="/logout" ng-click=PC.logout()>Log Out</a>
+    </div>
+        <div class="box">
+        <fieldset>
+        <legend><h1>Create new poll:</h1></legend>
+        <form>
+            <p> Question:
+            <input type="text" ng-model='PC.addPoll.question'></p>
+            <p> Option 1:
+            <input type="text" ng-model='PC.addPoll.options[0]'></p>
+            <p> Option 2:
+            <input type="text" ng-model='PC.addPoll.options[1]'></p>
+            <p> Option 3:
+            <input type="text" ng-model='PC.addPoll.options[2]'></p>
+            <p> Option 4:
+            <input type="text" ng-model='PC.addPoll.options[3]'></p>
+            <input type="submit" class="submit_btn" ng-click='PC.create()'></input>
+        </form>
+        </fieldset>
+        </div>
+
+
+</div>
