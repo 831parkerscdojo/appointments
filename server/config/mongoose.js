@@ -4,7 +4,7 @@
 var mongoose = require('mongoose');
 var fs = require('fs');
 var path = require('path');
-mongoose.connect('mongodb://localhost/polls')
+mongoose.connect('mongodb://localhost/appointments')
 var models_path = path.join(__dirname, './../models');
 
 fs.readdirSync(models_path).forEach(function(file){

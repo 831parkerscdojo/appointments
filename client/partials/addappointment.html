@@ -1,0 +1,27 @@
+<div ng-controller = 'appointmentsController as AC'>
+    <div class="nav">    
+        <a href="/logout" ng-click=AC.logout()><button class= "logout_btn">Log Out</button></a>
+    </div>
+        <div class="box">
+        <fieldset>
+        <legend><h1>New Appointment</h1></legend>
+        <form>
+            <p>Date:
+            <input type="date" name="date" min="2016-1-7" ng-model='AC.addAppointment.date'>
+            Time: 
+            <select name="time" ng-model='AC.addAppointment.time'>
+              <option value="8:00AM">8:00 AM</option>
+              <option value="1:00PM">1:00 PM</option>
+              <option value="3:00PM">3:00 PM</option>
+            </select></p>
+            <p> Complain: </p>
+            <textarea cols="80" rows="10" ng-model='AC.addAppointment.complain'></textarea>
+            <p>
+            <a href="#/home"><button class="cancel_btn">Cancel</button></a>
+            <input type="submit" class="submit_btn" ng-click='AC.create()'><button</input></p>
+        </form>
+        </fieldset>
+        </div>
+
+
+</div>

@@ -4,6 +4,7 @@
     height: 100px;
     padding: 20px;
     border-radius: 5px;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
 
 }
 #loginfield{
@@ -21,7 +22,7 @@ fieldset{
 }
 a{
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
-    padding-right: 300px; 
+    padding-right: 5px; 
 }
 h1{
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
@@ -55,6 +56,7 @@ table{
     margin-top: 15px;
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
     text-align: center;
+    margin-bottom: 15px;
 }
 tr{
     border: solid black 2px;
@@ -87,19 +89,31 @@ td{
 
 }
 .submit_btn{
-    background-color: #a5d6a7;
+    background-color: #64b5f6;
     color: white;
-    width: 300px;
+    width: 200px;
     height: 40px;
     border: solid black 2px;
-    margin-left: 65px;   
+    margin-left: 5px;   
 }
-.vote_btn{
-    background-color: #81d4fa;
+.cancel_btn{
+    background-color: #ffcc80;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: solid black 2px;
+    margin-left: 5px;   
+}
+.logout_btn{
+    background-color: #bbdefb;
     color: black;
     width: 100px;
     height: 25px;
     border: solid black 2px;
+    margin-left: 930px;
 
+}
+#search{
+    margin-left: 410px;
 }
 

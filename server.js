@@ -25,5 +25,5 @@ require(path.join(__dirname, './server/config/routes.js'))(app)
 //                     Listen to Port                     //
 ////////////////////////////////////////////////////////////
 app.listen(8000, function() {
-    console.log("Polls! Listening on 8000");
+    console.log("Appointments! Listening on 8000");
 })

@@ -2,7 +2,7 @@
 //                       Routes                         //
 //////////////////////////////////////////////////////////
 var users = require('../controllers/users');
-var polls = require('../controllers/polls');
+var appointments = require('../controllers/appointments');
 
 module.exports = function(app){
     app.get('/', function(req, res){
@@ -18,24 +18,16 @@ module.exports = function(app){
         console.log('logout working');
     });
 
-    app.get('/polls', function(req, res){
-        polls.index(req, res);
+    app.get('/appointments', function(req, res){
+        appointments.index(req, res);
     });
 
-    app.post('/polls/delete/:id', function(req, res){
-        polls.delete(req, res);
+    app.post('/appointments/delete/:id', function(req, res){
+        appointments.delete(req, res);
     })
 
-    app.post('/polls/new', function(req, res){
-        polls.create(req, res);
+    app.post('/appointments/new', function(req, res){
+        appointments.create(req, res);
     });
-
-    app.get('/polls/show/:id', function(req, res){
-        polls.show(req, res);
-    })
-
-    app.post('/polls/vote/:id', function(req, res){
-        polls.vote(req, res);
-    })
 
 }

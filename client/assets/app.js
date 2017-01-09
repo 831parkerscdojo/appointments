@@ -18,12 +18,12 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngStorage']);
     .when('/home', {
         templateUrl: 'partials/dashboard.html'
         })
-    .when('/show/:id', {
-        templateUrl: 'partials/showpoll.html',
-        controller: 'pollsController as PC'
-    })
-    .when('/addpoll', {
-        templateUrl: '/partials/addpoll.html'
+//    .when('/show/:id', {
+//        templateUrl: 'partials/showpoll.html',
+//        controller: 'appointmentsController as PC'
+//    })
+    .when('/addappointment', {
+        templateUrl: '/partials/addappointment.html'
     })
 
     .when('/logout', {

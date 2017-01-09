@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
-var Poll = mongoose.model('Poll');
+var Appointment = mongoose.model('Appointment');
 
 module.exports = {
     login: function(req, res){

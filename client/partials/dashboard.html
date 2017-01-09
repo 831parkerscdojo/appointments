@@ -1,25 +1,27 @@
 <!-- Dashboard !-->
-<div ng-controller = 'pollsController as PC'>
-    <a href="#/addpoll">Create a New Poll</a>
-    <a href="/logout" ng-click=PC.logout()>Log Out</a>
+<div ng-controller = 'appointmentsController as AC'>
+    <a href="/logout" ng-click=AC.logout()><button class="logout_btn">Log Out</button></a>
     <div class="box">
     <fieldset>
-    <legend><h1>Current Polls:</h1></legend>
-    <input ng-model="filter_name" placeholder="Search...">
+    <legend><h1>Doctor's Appointments</h1></legend>
+    <input id="search" ng-model="filter_name" placeholder="Search...">
     <table>
         <thead>
+            <td>Date</td>
+            <td>Time</td>
             <td>Name</td>
-            <td>Survey Question</td>
-            <td>Date Posted</td>
+            <td>Complain</td>
             <td>Action</td>
         </thead>
-        <tr ng-repeat="poll in PC.polls | filter:filter_name">
-            <td>{{poll._user.name}}</td>
-            <td><a href='#/show/{{poll._id}}'>{{poll.question}}</a></td>
-            <td>{{poll.created_at | date: 'short' }}</td>
-            <td><button class="delete_btn" ng-click=PC.delete($index)>Delete</button></td>
+        <tr ng-repeat="appointment in AC.appointments | filter:filter_name">
+            <td>{{appointment.date | date: 'MMMM d yyyy' }}</td>
+            <td>{{appointment.time}}</td>
+            <td>{{appointment._user.name}}</td>
+            <td>{{appointment.complain}}</a></td>
+            <td><button class="delete_btn" ng-click=AC.delete($index)>Delete</button></td>
         </tr>
     </table>
+    <a href="#/addappointment"><button class="submit_btn">Add a new appointment</button></a>
     </fieldset>
     </div>
 
